@@ -1,24 +1,94 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Budget App
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+> The Ruby on Rails capstone project Budget App is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
-* System dependencies
 
-* Configuration
+This Ruby on Rails application allows the user to:
+- Register and log in, so that the data is private to them.
 
-* Database creation
+- Introduce new transactions associated with a category.
 
-* Database initialization
+- See the money spent on each category.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Built With
 
-* Deployment instructions
+- Ruby
+- Ruby on Rails
+- Postgress
+- Capybara/Rspec
+- CSS
 
-* ...
+## Live Demo (Link for Budget App)
+
+[Heroku Live Demo Link]()
+
+## Development set up
+
+Clone Repository using
+
+`git clone git@github.com:amrendrakind/budget-app.git`
+
+Or using HTTPS
+
+`git clone https://github.com/amrendrakind/budget-app.git`
+
+Move into project directory
+
+`cd budget-app`
+
+### Setup Database 
+- Make sure that your Postgres database is installed.
+- Open the file config\database.yml
+- Modify the connection parameters to point your Postgres database:
+
+    `username: [your_user]`
+
+    `password: [your_password]`
+
+- If required drop existing database : `rake db:drop`
+- Create databases: `rake db:create`
+- Create db structure including tables : `rake db:migrate`
+- If required seed initial data (stored in db\seeds.rb file): `rails db:seed`
+
+### Run Tests
+
+- Install rspec: `bundle install`
+- Run all tests: `rspec spec`
+- Run all tests and show test documentation: `rspec spec --format documentation`
+
+### Run App
+- If required (Not for testing) run `rails server`
+- Visit http://localhost:3000/ in your browser!
+
+## Author
+
+👤 **Amrendra K**
+
+- GitHub: [@amrendrakind](https://github.com/amrendrakind)
+- Twitter: [@amrendrak_](https://twitter.com/amrendrak_)
+- LinkedIn: [amrendraakumar](https://linkedin.com/in/amrendraakumar)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/amrendrakind/budget-app/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
