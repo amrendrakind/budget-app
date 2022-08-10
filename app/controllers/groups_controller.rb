@@ -20,6 +20,7 @@ class GroupsController < ApplicationController
 
   def destroy
     @group.destroy
+    redirect_to @group
   end
 
   def group_params
