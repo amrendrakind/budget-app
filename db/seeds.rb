@@ -5,4 +5,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-amar = User.create(name: 'amar', email: 'amar@gmail.com', password: '123456')
+@user = User.create(name: 'Amrendra Kumar', email: 'amrendrak.ind@gmail.com', password: '123456')
+
+@transaction1 = Trading.create(  author_id: @user.id,  name: 'Fruits',  amount: 56)
+@transaction2 = Trading.create(  author_id: @user.id,  name: 'Vegetable',  amount: 12)
+@transaction3 = Trading.create(  author_id: @user.id,  name: 'Books',  amount: 345)
+
+
