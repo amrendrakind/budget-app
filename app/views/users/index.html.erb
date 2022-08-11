@@ -4,9 +4,9 @@
     <h2 class="welcome">Welcome, <%= current_user.name %>!</h2>
   <% end %>
     <%if current_user%>
-      <%= link_to "Categories", groups_path, class:"app_button standard_button" %>
-      <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"app_button red_button" %>
+      <%= link_to "Categories", groups_path %>
+      <%= link_to "Log Out", destroy_user_session_path, method: :delete%>
     <% else %>
-      <%= link_to "Log In", new_user_session_path, class:"app_button green_button" %>
-      <%= link_to "Sign Up", new_user_registration_path, class:"app_button standard_button" %>
+      <%= link_to "Log In", new_user_session_path %>
+      <%= link_to "Sign Up", new_user_registration_path %>
     <% end %>
