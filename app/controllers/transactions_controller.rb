@@ -33,5 +33,4 @@ class TransactionsController < ApplicationController
   def transaction_params
     params.require(:transaction).permit(:name, :amount, :group_id)
   end
-
 end
