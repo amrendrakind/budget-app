@@ -7,9 +7,9 @@
 #   Character.create(name: "Luke", movie: movies.first)
 @user = User.create(name: 'Amrendra Kumar', email: 'amrendrak.ind@gmail.com', password: '123456')
 
-@group1= Group.create(user_id: @user.id,  name: 'Icon1',  icon: 'app/assets/images/budget_logo.png')
-@group2= Group.create(user_id: @user.id,  name: 'Icon2',  icon: 'app/assets/images/budget_logo.png')
-@group3= Group.create(user_id: @user.id,  name: 'Icon3',  icon: 'app/assets/images/budget_logo.png')
+@group1= Group.create(user_id: @user.id,  name: 'Icon1',  icon: '🎉')
+@group2= Group.create(user_id: @user.id,  name: 'Icon2',  icon: '🎄')
+@group3= Group.create(user_id: @user.id,  name: 'Icon3',  icon: '🎁')
 
 @transaction1 = Transaction.create(user_id: @user.id,  name: 'Fruits',  amount: 60, group_id: @group1.id)
 @transaction2 = Transaction.create(user_id: @user.id,  name: 'Vegetable',  amount: 40, group_id: @group2.id)

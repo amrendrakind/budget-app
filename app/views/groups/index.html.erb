@@ -1,2 +1,10 @@
 <h1>Groups#index</h1>
-<p>Find me in app/views/groups/index.html.erb</p>
+
+<%if (@groups.any?)%>
+    <% @groups.each do |group| %>
+        <%= render partial: "shared/group", locals: { group: group } %>
+    <% end %>
+<% else %>
+    <h3>'Category records not found!'</h3>
+<% end %>
+<%= link_to "Add Category", new_group_path %>
