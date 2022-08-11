@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
   def index
-    @groups = Group.where(params[:user_id]) # : current_user.id
+    @groups = Group.where(user_id: current_user.id) # : current_user.id
   end
 
   def new
@@ -12,7 +12,7 @@ class GroupsController < ApplicationController
     @group.user_id = current_user.id
 
     if @group.save
-      flash[:notice] = 'Group was successfully created.'
+      flash[:notice] = 'Category was successfully created.'
       redirect_to group_path(@group)
     else
       flash[:error] = 'Error creating Group'
@@ -21,8 +21,12 @@ class GroupsController < ApplicationController
   end
 
   def destroy
-    @group.destroy
-    redirect_to @group
+    if @group.destroy
+      flash[:notice] = 'Category was successfully destroyed.'
+      redirect_to @group
+    else
+      flash[:error] = 'Error deleting category'
+    end
   end
 
   def group_params

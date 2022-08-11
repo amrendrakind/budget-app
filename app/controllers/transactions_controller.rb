@@ -22,8 +22,12 @@ class TransactionsController < ApplicationController
   end
 
   def destroy
-    @transaction.destroy
-    redirect_to group_path
+    if @transaction.destroy
+      flash[:notice] = 'transaction was successfully created.'
+      redirect_to group_path
+    else
+      flash[:error] = 'Error creating transaction'
+    end
   end
 
   def group_params
