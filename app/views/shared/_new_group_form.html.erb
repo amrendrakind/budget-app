@@ -1,0 +1,11 @@
+<%= form_with(model: @group) do |f| %>
+
+    <div><%= f.text_field :name, value: @group.name, placeholder: "Enter Category Name", required: true%> </div>
+
+    <div >
+        <%= f.label :icon, 'Select Icon:', class: "select_icon_label" %>
+        <%= f.select :icon, ["👔","🎵","🎉","🎁","🍼","🏠", "🐶", "🍻", "🍔"], value: @group.icon, required: true%>
+    </div>
+
+    <%= f.submit "Save Category"%>
+<% end %> 
