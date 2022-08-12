@@ -5,11 +5,13 @@
         <h4>Lists of Category and Total Tranactions</h4>
 
         <%if (@groups.any?)%>
+        <div>
             <% @groups.each do |group| %>
                 <%= link_to group_transactions_path(group.id) do %>
                 <%= render partial: "shared/group", locals: { group: group } %>
                 <% end %>
             <% end %>
+        </div>
         <% else %>
             <h3>'Category records not found!'</h3>
         <% end %>
