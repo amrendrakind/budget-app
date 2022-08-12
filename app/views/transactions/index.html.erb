@@ -1,16 +1,28 @@
-<h1>Transactions Lists#index</h1>
+<div class='container' >
+  <div class='loginForm'>
 
-<% @group.each do |group| %>
-     <%= render partial: "shared/group", locals: { group: group } %>
-    Item name Amount
-     <% group.transactions.order("created_at DESC").each do |t| %>
-        <div class="transaction">
-          <%= t.name %>
-          <%= t.amount %>
+    <h1>Transactions Lists</h1>
+
+    <% @group.each do |group| %>
+      <div class='transaction-container'>
+        <b><%= render partial: "shared/group", locals: { group: group } %></b>
+      </div>
+      <br>
+      <div class='transaction-container'>
+        <div class='title-transaction'>
+          <span>Items</span>
+          <span class='item-amount'>Amount</span>
         </div>
-      <% end %>
-    
-    <%= button_to link_to "New Transaction", new_group_transaction_path(group) %>
+        <% group.transactions.order("created_at DESC").each do |t| %>
+            <div class="item-transaction">
+              <div><%= t.name %></div>
+              <div class='item-amount'>$<%= t.amount %></div>
+            </div>
+          <% end %>
+        </div>
+        <br>
+        <%= button_to link_to "New Transaction", new_group_transaction_path(group) %>
 
-<% end %>
-<%= link_to "Back to Category", groups_path %>
+    <% end %>
+  </div>
+</div>

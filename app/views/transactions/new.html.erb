@@ -1,16 +1,24 @@
-<h1>New Transactions</h1>
-  <%= form_with model: @transaction, url: group_transactions_path  do |f| %>
+<div class='container' >
+  <div class='loginForm'>
 
-    <div class="form_inputs">
-      <div>
-        <%= f.text_field :name, required: true, placeholder: "Name"%>
-      </div>
+      <h2>New Transactions</h2>
+       <br>
+      <%= form_with model: @transaction, url: group_transactions_path  do |f|%>
 
-      <div>
-        <%= f.number_field :amount, required: true, placeholder: "Price"%>
-      </div>
+        <div class="form_inputs">
+          <div>
+            <%= f.text_field :name, required: true, placeholder: "Name of New Transaction"%>
+          </div>
+          <br>
+          <div>
+            <%= f.number_field :amount, required: true, placeholder: "Price of Items"%>
+          </div>
 
-    </div>
-    <%= f.submit "Add New Transaction"%>
-    <% end %>
-    <%= link_to "Back to Transaction", group_transactions_path %>
+        </div>
+        <br>
+        <%= f.submit "Add New Transaction", class: "add-button"%>
+        <% end %>
+        <br>
+        <%= link_to "Cancel", group_transactions_path %>
+  </div>
+</div>

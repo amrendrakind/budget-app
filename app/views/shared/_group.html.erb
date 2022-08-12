@@ -1,6 +1,11 @@
 
-<%= group.name %>
-
-<%= group.icon  %>
-
-Transactions: <%= group.sum_total %> <br>
+<div class='category-item'>
+    <div class='category-name-icon'>
+        <div><%= group.name %></div>
+        <div><%= group.icon  %></div>
+    </div>
+    <div class='category-transaction'>
+       <div> Total Transactions: </div>
+       <div>$<%= group.sum_total %> </div>
+    </div>
+</div>
