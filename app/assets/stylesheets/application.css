@@ -35,7 +35,6 @@ body {
 }
 
 .loginForm {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   width: 600px;
@@ -53,6 +52,66 @@ body {
 .splash-logo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-list > li {
+  width: 500px;
+  display: flex;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px rgb(0, 0, 0) groove;
+  border-radius: 3px;
+}
+
+.category-item {
+  width: 450px;
+  display: grid;
+  grid-template-columns: 50% 50% ;
+
+}
+
+.category-name-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.category-transaction {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.title-transaction {
+  font-size:large;
+  font-weight: bold;
+  width: 450px;
+  display: grid;
+  grid-template-columns: 50% 50% ;
+  
+}
+
+.item-transaction {
+  margin-top: 3px;
+  width: 450px;
+  display: grid;
+  grid-template-columns: 50% 50% ;
+}
+
+.item-amount {
+  text-align: right;
+}
+
+.transaction-container {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  padding: 10px;
+  border: 1px solid #2d2d2d;
   justify-content: center;
   align-items: center;
 }
