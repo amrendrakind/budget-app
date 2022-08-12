@@ -20,5 +20,4 @@ RSpec.describe 'Category', type: :feature do
   it 'Has the form to add a category' do
     expect(page).to have_content('Add New Category')
   end
-
 end
