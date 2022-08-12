@@ -2,7 +2,9 @@
 
 <%if (@groups.any?)%>
     <% @groups.each do |group| %>
-        <%= render partial: "shared/group", locals: { group: group } %>
+        <%= link_to group_transactions_path(group.id) do %>
+         <%= render partial: "shared/group", locals: { group: group } %>
+        <% end %>
     <% end %>
 <% else %>
     <h3>'Category records not found!'</h3>

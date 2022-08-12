@@ -14,7 +14,7 @@ class GroupsController < ApplicationController
 
     if @group.save
       flash[:notice] = 'Category was successfully created.'
-      redirect_to group_path(@group)
+      redirect_to groups_path
     else
       flash[:error] = 'Error creating Group'
       redirect_to new_groups_path(@group)

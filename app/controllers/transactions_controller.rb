@@ -1,10 +1,14 @@
 class TransactionsController < ApplicationController
+  before_action :set_group, only: %i[new create edit update destroy]
+  before_action :set_transaction, only: %i[edit update destroy]
+
   def index
-    @transactions = Transaction.where(user_id: current_user.id)
+    @group = Group.where(user_id: current_user.id, id: params[:group_id])
   end
 
   def new
     @transaction = Transaction.new
+    @group = Group.where(user_id: current_user)
   end
 
   def create
@@ -30,11 +34,15 @@ class TransactionsController < ApplicationController
     end
   end
 
-  def group_params
-    params.require(:group).permit(:name, :icon)
+  def transaction_params
+    params.require(:transaction).permit(:name, :amount)
   end
 
-  def transaction_params
-    params.require(:transaction).permit(:name, :amount, :group_id)
+  def set_transaction
+    @transaction = Transaction.find(params[:id])
+  end
+
+  def set_group
+    @group = Group.find(params[:group_id])
   end
 end
