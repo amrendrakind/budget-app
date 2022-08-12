@@ -1,14 +1,14 @@
 <h1>New Transactions</h1>
-
+  <%= group.id %>
   <%= form_with model: @transaction, url: group_transactions_path  do |f| %>
 
     <div class="form_inputs">
       <div>
-        <%= f.text_field :name, placeholder: "Name"%>
+        <%= f.text_field :name, required: true, placeholder: "Name"%>
       </div>
 
       <div>
-        <%= f.number_field :amount, placeholder: "Price"%>
+        <%= f.number_field :amount, required: true, placeholder: "Price"%>
       </div>
 
     </div>

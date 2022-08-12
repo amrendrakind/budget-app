@@ -17,17 +17,17 @@ class TransactionsController < ApplicationController
     @transaction.group_id = @group.id
 
     if @transaction.save
-      flash[:notice] = 'transaction was successfully created.'
+      flash[:notice] = 'Transaction was successfully created.'
       redirect_to group_transactions_path
     else
       flash[:error] = 'Error creating transaction'
-      redirect_to new_transaction_path(@group)
+      redirect_to new_group_transaction_path(@group)
     end
   end
 
   def destroy
     if @transaction.destroy
-      flash[:notice] = 'transaction was successfully created.'
+      flash[:notice] = 'Transaction was successfully created.'
       redirect_to group_path
     else
       flash[:error] = 'Error creating transaction'
