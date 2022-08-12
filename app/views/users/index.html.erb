@@ -1,2 +1,15 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<h1>Budget App by Amrendra K</h1>
+
+<img class="splash-image" src="<%= image_path("budget_logo.png") %>" alt="splash_icon"/> <br>
+
+<%if current_user%>
+  <h2 class="welcome">Welcome, <%= current_user.name %>!</h2>
+<% end %>
+
+<%if current_user%>
+  <%= link_to "Categories", groups_path %>
+  <%= link_to "Log Out", destroy_user_session_path, method: :delete%>
+<% else %>
+  <%= link_to "Log In", new_user_session_path %>
+  <%= link_to "Sign Up", new_user_registration_path %>
+<% end %>

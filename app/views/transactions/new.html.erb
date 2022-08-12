@@ -1,0 +1,16 @@
+<h1>New Transactions</h1>
+  <%= form_with model: @transaction, url: group_transactions_path  do |f| %>
+
+    <div class="form_inputs">
+      <div>
+        <%= f.text_field :name, required: true, placeholder: "Name"%>
+      </div>
+
+      <div>
+        <%= f.number_field :amount, required: true, placeholder: "Price"%>
+      </div>
+
+    </div>
+    <%= f.submit "Add New Transaction"%>
+    <% end %>
+    <%= link_to "Back to Transaction", group_transactions_path %>
