@@ -14,7 +14,7 @@
  *= require_self
  */
 
- .splash-image {
-    height: 250px;
-    width: 250px;
- }
+.splash-image {
+  height: 250px;
+  width: 250px;
+}
