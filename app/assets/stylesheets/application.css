@@ -68,8 +68,7 @@ body {
 .category-item {
   width: 450px;
   display: grid;
-  grid-template-columns: 50% 50% ;
-
+  grid-template-columns: 50% 50%;
 }
 
 .category-name-icon {
@@ -81,25 +80,24 @@ body {
 .category-transaction {
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   gap: 5px;
 }
 
 .title-transaction {
-  font-size:large;
+  font-size: large;
   font-weight: bold;
   width: 450px;
   display: grid;
-  grid-template-columns: 50% 50% ;
-  
+  grid-template-columns: 50% 50%;
 }
 
 .item-transaction {
   margin-top: 3px;
   width: 450px;
   display: grid;
-  grid-template-columns: 50% 50% ;
+  grid-template-columns: 50% 50%;
 }
 
 .item-amount {
