@@ -4,7 +4,7 @@
     <h1>Transactions Lists</h1>
 
     <% @group.each do |group| %>
-      <div class='cate'>
+      <div class='transaction-container'>
         <b><%= render partial: "shared/group", locals: { group: group } %></b>
       </div>
       <br>
