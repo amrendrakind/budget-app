@@ -18,7 +18,7 @@ class TransactionsController < ApplicationController
 
     if @transaction.save
       flash[:notice] = 'transaction was successfully created.'
-      redirect_to group_path(@group)
+      redirect_to group_transactions_path
     else
       flash[:error] = 'Error creating transaction'
       redirect_to new_transaction_path(@group)
