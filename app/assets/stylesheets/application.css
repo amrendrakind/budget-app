@@ -115,3 +115,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.form-new-transaction {
+  align-items: center;
+}
+
+.add-button {
+  padding: 3px;
+}
