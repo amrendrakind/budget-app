@@ -151,6 +151,7 @@ body {
 }
 
 .loginForm-signin,
+.loginForm-home,
 .loginForm-add-new-category,
 .loginForm-signup,
 .loginForm-new-transaction,
@@ -162,4 +163,13 @@ body {
   border: 1px solid #2d2d2d;
   justify-content: center;
   align-items: center;
+}
+
+.header-menu {
+  padding: 5px;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
