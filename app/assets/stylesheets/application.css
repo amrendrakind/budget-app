@@ -33,7 +33,6 @@ body {
   justify-content: space-between;
   height: 100vh;
   padding: 10px;
-
 }
 
 .loginForm {
@@ -121,10 +120,6 @@ body {
   align-items: center;
 }
 
-.add-button {
-  padding: 3px;
-}
-
 .category-item-transaction {
   width: 90%;
   display: grid;
@@ -145,6 +140,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3px;
 }
 
 .add-button-signup {
@@ -160,11 +156,10 @@ body {
 .loginForm-new-transaction,
 .loginForm-transaction-list {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   width: 100%;
   padding: 10px;
   border: 1px solid #2d2d2d;
   justify-content: center;
   align-items: center;
 }
-
