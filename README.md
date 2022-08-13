@@ -8,6 +8,7 @@
 
 
 This Ruby on Rails application allows the user to:
+
 - Register and log in, so that the data is private to them.
 
 - Introduce new transactions associated with a category.
@@ -25,7 +26,7 @@ This Ruby on Rails application allows the user to:
 
 ## Live Demo (Link for Budget App)
 
-[Heroku Live Demo Link]()
+[Heroku Live Demo Link](https://lit-brook-15225.herokuapp.com/)
 
 ## Development set up
 
