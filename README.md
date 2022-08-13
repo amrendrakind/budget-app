@@ -24,6 +24,10 @@ This Ruby on Rails application allows the user to:
 - Capybara/Rspec
 - CSS
 
+## Video presentation
+
+[Click here]()
+
 ## Live Demo (Link for Budget App)
 
 [Heroku Live Demo Link](https://lit-brook-15225.herokuapp.com/)
@@ -86,9 +90,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Based on [Gregoire Vella on Behance design](https://www.behance.net/gregoirevella)
 - Hat tip to anyone whose code was used
-- Inspiration
-
+- Inspiration and support from peer group
 
 ## 📝 License
 
