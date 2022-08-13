@@ -26,7 +26,7 @@ This Ruby on Rails application allows the user to:
 
 ## Video presentation
 
-[Click here]()
+[Click here](https://www.loom.com/share/2209989877fd4e03aad8c5c5ef9476e8)
 
 ## Live Demo (Link for Budget App)
 
