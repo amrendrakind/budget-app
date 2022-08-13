@@ -15,8 +15,6 @@
  */
 * {
   padding: 0;
-
-  /* margin: 0; */
   text-decoration: none;
 }
 
@@ -30,14 +28,15 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 10px;
 }
 
 .loginForm {
-  display: flex;
-  flex-direction: column;
-  width: 600px;
+  width: 100%;
   padding: 10px;
   border: 1px solid #2d2d2d;
   justify-content: center;
@@ -45,8 +44,8 @@ body {
 }
 
 .splash-image {
-  height: 250px;
-  width: 250px;
+  height: 50%;
+  width: 50%;
 }
 
 .splash-logo {
@@ -57,27 +56,28 @@ body {
 }
 
 .category-list > li {
-  width: 500px;
-  display: flex;
-  padding: 10px 15px;
+  list-style: none;
   margin: 10px 0;
   border: 1px rgb(0, 0, 0) groove;
   border-radius: 3px;
 }
 
 .category-item {
-  width: 450px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
+  padding: 5px;
 }
 
 .category-name-icon {
+  padding-left: 5px;
   display: flex;
   flex-direction: row;
   gap: 5px;
 }
 
 .category-transaction {
+  font-weight: bold;
+  padding-right: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -88,14 +88,14 @@ body {
 .title-transaction {
   font-size: large;
   font-weight: bold;
-  width: 450px;
+  width: 80%;
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
 .item-transaction {
   margin-top: 3px;
-  width: 450px;
+  width: 80%;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -107,7 +107,7 @@ body {
 .transaction-container {
   display: flex;
   flex-direction: column;
-  width: 550px;
+  width: 90%;
   padding: 10px;
   border: 1px solid #2d2d2d;
   justify-content: center;
@@ -118,6 +118,56 @@ body {
   align-items: center;
 }
 
+.category-item-transaction {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 5px;
+}
+
+.add-category,
+.list-of-category {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
 .add-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 3px;
+}
+
+.add-button-signup {
+  width: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm-signin,
+.loginForm-home,
+.loginForm-add-new-category,
+.loginForm-signup,
+.loginForm-new-transaction,
+.loginForm-transaction-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2d2d2d;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-menu {
+  padding: 5px;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }

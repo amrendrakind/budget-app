@@ -1,11 +1,11 @@
 <div class='container' >
-  <div class='loginForm'>
+  <div class='loginForm-transaction-list'>
 
-    <h1>Transactions Lists</h1>
+    <h2>Transactions Lists</h2>
 
     <% @group.each do |group| %>
       <div class='transaction-container'>
-        <b><%= render partial: "shared/group", locals: { group: group } %></b>
+        <%= render partial: "shared/group", locals: { group: group } %>
       </div>
       <br>
       <div class='transaction-container'>

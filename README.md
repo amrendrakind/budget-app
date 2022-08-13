@@ -8,6 +8,7 @@
 
 
 This Ruby on Rails application allows the user to:
+
 - Register and log in, so that the data is private to them.
 
 - Introduce new transactions associated with a category.
@@ -23,9 +24,13 @@ This Ruby on Rails application allows the user to:
 - Capybara/Rspec
 - CSS
 
+## Video presentation
+
+[Click here]()
+
 ## Live Demo (Link for Budget App)
 
-[Heroku Live Demo Link]()
+[Heroku Live Demo Link](https://lit-brook-15225.herokuapp.com/)
 
 ## Development set up
 
@@ -85,9 +90,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- Based on [Gregoire Vella on Behance design](https://www.behance.net/gregoirevella)
 - Hat tip to anyone whose code was used
-- Inspiration
-
+- Inspiration and support from peer group
 
 ## 📝 License
 
