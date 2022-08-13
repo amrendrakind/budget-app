@@ -1,0 +1,27 @@
+
+<div class='container' >
+    <div class='loginForm'>
+
+        <h4 class='list-of-category'>Lists of Category</h4>
+
+        <%if (@groups.any?)%>
+        <div >
+         <ul class='category-list'>
+            <% @groups.each do |group| %>
+            
+                <li>
+                    <%= link_to group_transactions_path(group.id) do %>
+                    <%= render partial: "shared/group", locals: { group: group } %>
+                    <% end %>
+                </li>
+            
+            <% end %>
+            </ul>
+        </div>
+        <% else %>
+            <h3>'Category records not found!'</h3>
+        <% end %>
+        <br>
+        <%= link_to "Add Category", new_group_path, class:'add-category'%>
+    </div>
+</div>

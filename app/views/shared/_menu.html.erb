@@ -1,0 +1,17 @@
+
+  <ul class="header-menu">
+  <% if user_signed_in? %>
+      <li class= 'nav-link'>
+        <% if user_signed_in? %>
+          <%= link_to groups_path do %>
+            <span class="material-symbols-outlined back">arrow_back_ios</span>
+          <% end %>
+        <% else %>
+          <%= link_to root_path do %>
+            <span class="material-symbols-outlined back">arrow_back_ios</span>
+          <% end %>
+        <% end %>
+      </li>
+      <li ><%= link_to 'Sign Out', destroy_user_session_path, class: 'nav-link' %></li>
+  <% end %>
+  </ul>

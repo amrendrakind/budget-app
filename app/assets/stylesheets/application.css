@@ -1,0 +1,173 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+* {
+  padding: 0;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #f6f5f8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 10px;
+}
+
+.loginForm {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2d2d2d;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-image {
+  height: 50%;
+  width: 50%;
+}
+
+.splash-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-list > li {
+  list-style: none;
+  margin: 10px 0;
+  border: 1px rgb(0, 0, 0) groove;
+  border-radius: 3px;
+}
+
+.category-item {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 5px;
+}
+
+.category-name-icon {
+  padding-left: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.category-transaction {
+  font-weight: bold;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.title-transaction {
+  font-size: large;
+  font-weight: bold;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.item-transaction {
+  margin-top: 3px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.item-amount {
+  text-align: right;
+}
+
+.transaction-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #2d2d2d;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-new-transaction {
+  align-items: center;
+}
+
+.category-item-transaction {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 5px;
+}
+
+.add-category,
+.list-of-category {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.add-button-signup {
+  width: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm-signin,
+.loginForm-home,
+.loginForm-add-new-category,
+.loginForm-signup,
+.loginForm-new-transaction,
+.loginForm-transaction-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2d2d2d;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-menu {
+  padding: 5px;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
